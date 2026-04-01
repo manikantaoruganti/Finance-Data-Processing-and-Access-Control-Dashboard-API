@@ -1,0 +1,29 @@
+{
+  "name": "finance-dashboard-api",
+  "version": "1.0.0",
+  "description": "Backend API for a Finance Data Processing and Access Control Dashboard.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "jwt",
+    "rbac",
+    "finance",
+    "api"
+  ],
+  "author": "Bolt",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1"
+  }
+}
