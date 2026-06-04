@@ -32,11 +32,7 @@ const getMonthlyTrends = catchAsync(async (req, res) => {
   successResponse(res, 200, 'Monthly trends retrieved successfully.', trends);
 });
 
-/**
- * Get a list of recent financial transactions.
- * @param {Object} req - Express request object.
- * @param {Object} res - Express response object.
- */
+
 const getRecentTransactions = catchAsync(async (req, res) => {
   const { page = 1, limit = 10 } = req.query;
   const recentTransactions = await dashboardService.getRecentTransactions(parseInt(page), parseInt(limit));
